@@ -1,0 +1,304 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMoA++0t8Av0/RXFgtOJZTP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Yiting-Wang98/MSSP607/blob/main/assignments/week%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import userdata\n",
+        "import os\n",
+        "\n",
+        "github_token = userdata.get('Gitkey')\n",
+        "owner = 'Yiting-Wang98' # Replace with the GitHub repository owner\n",
+        "repository = 'MSSP607' # Replace with the GitHub repository name\n",
+        "\n",
+        "clone_url = f'https://github.com/Yiting-Wang98/MSSP607'\n",
+        "\n",
+        "# Clone the repository\n",
+        "!git clone {clone_url}\n",
+        "\n",
+        "# Navigate into the cloned repository directory (optional, but often useful)\n",
+        "os.chdir(repository)\n",
+        "print(f\"Changed directory to: {os.getcwd()}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "__3B7yf6dIEf",
+        "outputId": "4a8ba988-260d-4e17-c65c-205a2b987b84"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Cloning into 'MSSP607'...\n",
+            "remote: Enumerating objects: 105, done.\u001b[K\n",
+            "remote: Counting objects: 100% (105/105), done.\u001b[K\n",
+            "remote: Compressing objects: 100% (83/83), done.\u001b[K\n",
+            "remote: Total 105 (delta 13), reused 0 (delta 0), pack-reused 0 (from 0)\u001b[K\n",
+            "Receiving objects: 100% (105/105), 153.65 KiB | 2.90 MiB/s, done.\n",
+            "Resolving deltas: 100% (13/13), done.\n",
+            "Changed directory to: /content/MSSP607\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "owner='Yiting-Wang98'\n",
+        "repository='MSSP607'\n",
+        "clone_url='https://github.com/Yiting-Wang98/MSSP607'\n",
+        "\n",
+        "!git clone (clone_url)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NGtr8J6Ngeq6",
+        "outputId": "c00ee470-8253-455f-e715-8d1a4e89b790"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "/bin/bash: -c: line 1: syntax error near unexpected token `('\n",
+            "/bin/bash: -c: line 1: `git clone (clone_url)'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sKa65-pcTHQp",
+        "outputId": "d3d272fd-5230-4b90-cd67-a57a37565834"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "eating\n",
+            "3\n",
+            "hello daniel\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 1. when does the code in a function execute\n",
+        "def hello_world():\n",
+        "  print ('eating')\n",
+        "hello_world()\n",
+        "\n",
+        "def calculate(a,b):\n",
+        "   print(a+b)\n",
+        "calculate(1,2)\n",
+        "\n",
+        "def hello(name):\n",
+        "  print('hello',name)\n",
+        "hello('daniel')"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The code inside a function executes when the function is called. Defining a function only creates the function; it does not execute its code."
+      ],
+      "metadata": {
+        "id": "YAvHFXO-6h3n"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rqvyY0DvhQgK",
+        "outputId": "1776fb52-73f1-4cef-80e3-0c9cbcf8ed28"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mounted at /content/drive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 2. how many global scopes are there in a python program? how  many local scopes\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "yFHPvLUtaQvK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "There is one global scope in a Python program. There can be multiple local scopes, because a new local scope is created each time a function is called."
+      ],
+      "metadata": {
+        "id": "l-mTNsRCmbHr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 3. What happens to variables in a local scope when the function call returns?"
+      ],
+      "metadata": {
+        "id": "9nNFPqEhm62K"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "When a function call returns, its local scope is destroyed, and the variables in that local scope are also destroyed."
+      ],
+      "metadata": {
+        "id": "hOTl_F1Wm4Je"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 4.How can you prevent a program from crashing when it gets an error?"
+      ],
+      "metadata": {
+        "id": "m6Aqh4x1m9GZ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1. try the A ZeroDivisionError\n",
+        "def spam(divide_by):\n",
+        "    \n",
+        "    try:\n",
+        "        # Any code in this block that causes ZeroDivisionError won't crash the program:\n",
+        "        return 42 / divide_by\n",
+        "    \n",
+        "    except ZeroDivisionError:\n",
+        "        # If ZeroDivisionError happened, the code in this block runs:\n",
+        "        print('Error: Invalid argument.')\n",
+        "\n",
+        "print(spam(2))\n",
+        "print(spam(12))\n",
+        "print(spam(0))\n",
+        "print(spam(1))\n",
+        "\n",
+        "2.I can prevent a program from crashing by placing the risky code inside a try block and handling the error in a matching except block, so the program can respond to the error and keep running instead of stopping.\n"
+      ],
+      "metadata": {
+        "id": "_5iP73yJm_kf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 5.Complete the practice program"
+      ],
+      "metadata": {
+        "id": "G_OpwJS6nz-5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def collatz(number):\n",
+        "  if number % 2 ==0:\n",
+        "    return number // 2\n",
+        "  return 3 * number + 1\n",
+        "\n",
+        "number=int(input('enter an integer:'))\n",
+        "while number !=1:\n",
+        "  number=collatz(number)\n",
+        "  print(number,sep='',end=' ')\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "U_JWWbGzn-jJ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "82ab3c35-08f6-4c18-aeaf-5848b9679b3e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter an integer:3\n",
+            "10 5 16 8 4 2 1 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "ui_tnc7mo4bF"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
